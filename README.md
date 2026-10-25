@@ -1,4 +1,4 @@
-# QQ AI Bot
+# QingBridge
 
 基于官方 QQNT 内核的本地 QQ 机器人，提供 OneBot v11 兼容接口、扫码登录工作台和可选的 AI 自动回复。项目通过自研 N-API 宿主加载官方内核，不依赖 NapCat 或其他 QQ 机器人框架。
 
