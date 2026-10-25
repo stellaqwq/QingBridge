@@ -1,0 +1,457 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "9e1c57f8e08a9d6c4272254b870b087d880d66d6a63dcbc8cd1b652ee370f042"
+    },
+    {
+      "path": ".env.example",
+      "sha256": "f3b650bab76507531c4d5f3106f199d295f1837afb42b1b3b11e8bd10e12d443"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "18227663549f6fa8986edcdf4fb195f23670166dc13bdad9f387217780ee0513"
+    },
+    {
+      "path": ".impeccable/design.json",
+      "sha256": "7bdb46fdf67cb6ebd8b8679dc91780c84cfc27243ea95e1d1a22341227d0e661"
+    },
+    {
+      "path": ".impeccable/surface-briefs/workspace.md",
+      "sha256": "4f32cde804411e5a52bc2d9099e18cf3ff62312a91d88bff3b3ece5c5b60a642"
+    },
+    {
+      "path": ".npmignore",
+      "sha256": "c17df70030ca1a44121f53113c9c6a2191465d17e55079354617d6bc546c2e03"
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "63de63c91ac6ae7a2e583e15efedccb749f53ecf19cf60603612798a3b3f19ac"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "683fc150ec4dc4fa51d0744498c02e4807808f586e9f246e1ead6d941158784a"
+    },
+    {
+      "path": "PRODUCT.md",
+      "sha256": "d1cec948da3390302842cf29932f0e51fa3d456163e9a6c37810020396a63eab"
+    },
+    {
+      "path": "README.md",
+      "sha256": "65a664ddf80301534a4a00503f547c982db9da922e89ab5b3b7b10196b186511"
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "7158a427f8b5d114ed2d4fd8d6f58d103ebaf00a6876d0c66a67b300e0c926f2"
+    },
+    {
+      "path": "docs/DRIVER.md",
+      "sha256": "9709112e049f2177c21dacf1117d110272ca1713c596600f5a51a306f6f0ffbb"
+    },
+    {
+      "path": "docs/IMAGES.md",
+      "sha256": "b62a27d0e12e656b683fccd3b5886fd790015ddd853003b81448586d9e2f6b8c"
+    },
+    {
+      "path": "docs/KERNEL.md",
+      "sha256": "7a9fadca8f93995f13ef4f6fae19154d056876154fa99259ebea78c55ed143e8"
+    },
+    {
+      "path": "docs/LEGACY_PROTOCOL.md",
+      "sha256": "6a024c9486040dfbe1fa9e829843b104be7ebe83165b4331e88a32a3be774ca6"
+    },
+    {
+      "path": "docs/NATIVE.md",
+      "sha256": "01afc300ec32497a38c76e778cb7a83cf3d99c962dfb7d1092de1e5112a39615"
+    },
+    {
+      "path": "docs/REVIEW-2026-10-24-ROUND2.md",
+      "sha256": "8c54ffd9441374b18d926ad2445d18eae64c8ac1b7f95905605c9e9094d97b5f"
+    },
+    {
+      "path": "docs/REVIEW-2026-10-24-ROUND3.md",
+      "sha256": "47d280548a07d10649f65750ac040e466164d117e606a5ae4f4ba5a1f9787fb3"
+    },
+    {
+      "path": "docs/REVIEW-2026-10-24.md",
+      "sha256": "b15984e4e4e79e5a02ae4f59dc3245b9ef3d08de76830c31f85707d6eecee5a6"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "053393bb23fccfe7e07f053cf550b94a645ae06498b462f04627df221451dd4c"
+    },
+    {
+      "path": "docs/UI-REVIEW.md",
+      "sha256": "81eec8a8333e279e207ec4ca849ccc2c73ac779896bc2fae27081012834ee55c"
+    },
+    {
+      "path": "docs/WEB.md",
+      "sha256": "e8cd99c305501de878f684ae302b808fe5d042a5c029ebc4242a9658ce8d26c6"
+    },
+    {
+      "path": "examples/native-driver.mjs",
+      "sha256": "90d11a9fce304b540a8d6451dc51ef78ab1277dc31971267c5dfe57d31ec5ca8"
+    },
+    {
+      "path": "native/qq-host/bridge.c",
+      "sha256": "cd0ef9fec4945bcd9ad3e0265120f30be41031b4aa8f67f0be475aa81f296e0c"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "18e97373a53db1440c210c13280b2199f4292ab2cd3d17f451c77f7908978727"
+    },
+    {
+      "path": "package.json",
+      "sha256": "ffcc4af7f5d57da750990de3eaf168975621baa04b7bd46af295f36e864cf101"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "sha256": "6cf2d153fb8c107a44a13d400e629f28d6d73664769298987855ef0e8203e82c"
+    },
+    {
+      "path": "scripts/cli.mjs",
+      "sha256": "954248241a17896dc38be6a2b049f32a10de382e504476787c4f3f0b95dfc4bc"
+    },
+    {
+      "path": "scripts/container.mjs",
+      "sha256": "ba3518abdf31c2193fa0d1bff7af0300fd5e224d707c97d15702a3f153fb609c"
+    },
+    {
+      "path": "scripts/demo.mjs",
+      "sha256": "571f702991b2d0cecfdde11970a2f890d3d1d892ee83c8fe5e35cde091448d7f"
+    },
+    {
+      "path": "scripts/image-self-test.mjs",
+      "sha256": "dc1c3969d7ded21c0f60d5256d5d0c262bc4405e1a77ea7c6ad3379a87a615f2"
+    },
+    {
+      "path": "scripts/init.mjs",
+      "sha256": "47313f98a2f408866c97af419af133d805f09c23c667253191817a6b79f1a8cf"
+    },
+    {
+      "path": "scripts/launch.mjs",
+      "sha256": "eee42754582a0bd4c3cb4e08dd87c41ce3b57624943beea79acd1e5644e30a91"
+    },
+    {
+      "path": "scripts/login-page.mjs",
+      "sha256": "c5c8e421bcd68772b9984e6981009950643ad1517861b8040db2c5648c2667d2"
+    },
+    {
+      "path": "scripts/native-check.mjs",
+      "sha256": "0a1a6e5078ac54446569b4f979000c535eb8848a1c71bd28f53943ebf2ee117d"
+    },
+    {
+      "path": "scripts/qq-build.mjs",
+      "sha256": "1fe5fc09f435d9a6df37335c77ee975a2a4a03f6915017658e2bb7e3ed4c8f06"
+    },
+    {
+      "path": "scripts/qq-download.mjs",
+      "sha256": "2721b74aef5b11a4e8f71e0657d34a5833ee45cfc670d8441011adc83350bda3"
+    },
+    {
+      "path": "scripts/qq-prepare.mjs",
+      "sha256": "86958dd65916712e7f59debc25d6542bbad7c4722dc2d092978331a58ae07d35"
+    },
+    {
+      "path": "scripts/qq-setup.mjs",
+      "sha256": "e7eca66f596277d3bdc5470c1d4f3776f4c709a63d0b816760b2c32097829122"
+    },
+    {
+      "path": "scripts/source-package.mjs",
+      "sha256": "85ea69fd34acdc511202e0d0f4d8a2f582009330ec87d4e452d65aab8bbe77c8"
+    },
+    {
+      "path": "scripts/test.mjs",
+      "sha256": "4c6924bac3615353d9e4695c1a3dad40ad01669195b805b582892307ce80dc90"
+    },
+    {
+      "path": "scripts/web-qa.mjs",
+      "sha256": "f66d3fabc968fbf5388074bb0c6fb48a3126e44985b05918701bf0e4f9b944bc"
+    },
+    {
+      "path": "src/ai.mjs",
+      "sha256": "31898b979a13b9b533bdceda6b62c4eedc8898de3cafe9fc924f8968886e3e22"
+    },
+    {
+      "path": "src/app.mjs",
+      "sha256": "af9644ff0a4fd4978604e8be0922f934eaffa52d9fd5aeb0e0728ce7f653b4d7"
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "db417a227a60d492f63668c52b8b764366e007f344c0260e0373b4c4eee6c5a7"
+    },
+    {
+      "path": "src/data-lock.mjs",
+      "sha256": "6008324fac812d20dbc2350fc4b1977c1659a1a9e423a6599a6b0fc4674d89bc"
+    },
+    {
+      "path": "src/errors.mjs",
+      "sha256": "c6abb01933f473177dc59295aa463b65e31a6a35810e0c3a5b63c90683943c66"
+    },
+    {
+      "path": "src/limiter.mjs",
+      "sha256": "37a0e5e5dc353fe8747c3fe075b6e01d55cd2cc6a447992b3fa50e260d671ebd"
+    },
+    {
+      "path": "src/logger.mjs",
+      "sha256": "028dcec7b7e6dc019eeeda6482137d517eb2ea2e9bb422f7dbfb41376d06d3e4"
+    },
+    {
+      "path": "src/main.mjs",
+      "sha256": "98fec1cb913a61ed658e1d24919a5b5e3b78cc461890347c586b100f557e692f"
+    },
+    {
+      "path": "src/messages.mjs",
+      "sha256": "0fd676c55325a69133d1b50e6f72c8e128b853d6742927217e8f7c5d6be69c72"
+    },
+    {
+      "path": "src/onebot.mjs",
+      "sha256": "f9c99ae16e3dea1acf5e89eb84290041fb748d9de1812c0111ecab4dadb64584"
+    },
+    {
+      "path": "src/qq/adapter.mjs",
+      "sha256": "89294eb2832bffdccc5ce21922e9293a6cf76ddfabb28b4b0463fa7a8b374d25"
+    },
+    {
+      "path": "src/qq/demo-driver.mjs",
+      "sha256": "50feac7dd97a56ece8a4b20f19be13bc3cd0824765d2906072712ec35d12abdb"
+    },
+    {
+      "path": "src/qq/driver.mjs",
+      "sha256": "ee7c383bcbb4523203fbd4648b406d74d0c0b0e4828a0250f450d19decc839d5"
+    },
+    {
+      "path": "src/qq/image-delivery.mjs",
+      "sha256": "0591b237bb0029d13121d8febef4f0cc4dd24fac12c5395fc0fed592bf0f319d"
+    },
+    {
+      "path": "src/qq/kernel-driver.mjs",
+      "sha256": "5388a169f089a57741a160fe9797dd803f28b5efbab13b886f535d069d3c9123"
+    },
+    {
+      "path": "src/qq/kernel/bridge-image.mjs",
+      "sha256": "13da30653c05d32d40f5cd29b02ef6568b8c5f837c3c102842d5fa9c34bb1e06"
+    },
+    {
+      "path": "src/qq/kernel/build.mjs",
+      "sha256": "5447f718f89fe1a208515a2bbb11eaf10ca46d598bc4c8c667b5c8430e0485ef"
+    },
+    {
+      "path": "src/qq/kernel/contacts.mjs",
+      "sha256": "5332785fc501b5e15c7e3b87ddfc9abe1f477dae6e91c3c70a246bca2d1cb73a"
+    },
+    {
+      "path": "src/qq/kernel/elements.mjs",
+      "sha256": "dd9aacaf91954d47c6a318795de317bbd683c33250a869b82ad848576e08ee1b"
+    },
+    {
+      "path": "src/qq/kernel/host.mjs",
+      "sha256": "7d4ad08b2412875dca2e4c85e92ac87c2abf69bad2684d850bef8ccde7ccb5ad"
+    },
+    {
+      "path": "src/qq/kernel/image.mjs",
+      "sha256": "1d0ce7171c10b82b1fe7d21739b5dda2300a0c7a62167669c9d93c6a568b17ea"
+    },
+    {
+      "path": "src/qq/kernel/lifecycle.mjs",
+      "sha256": "1120f729a8486ef574048eca6e4a5beaf33ce9a923a30ad36ec5ee95829fe20e"
+    },
+    {
+      "path": "src/qq/kernel/messages.mjs",
+      "sha256": "167812262abf3d3d8820450177673b1ba585658889f0a124ee41db7d8e2beaea"
+    },
+    {
+      "path": "src/qq/kernel/pe.mjs",
+      "sha256": "b6c6097e8a673785b55bd7335ddc69ab381748d642807f4fba659a9c41d37036"
+    },
+    {
+      "path": "src/qq/kernel/prepare.mjs",
+      "sha256": "e75af51d5170bb3dc0dcef51dd1f0677dfd0351605e930ea3d2a7901a2f74d29"
+    },
+    {
+      "path": "src/qq/kernel/profile.mjs",
+      "sha256": "4b5994798e64704bc00952196391471d8b30e164e8fc8211cb8b4bd5df6696d6"
+    },
+    {
+      "path": "src/qq/kernel/receive-images.mjs",
+      "sha256": "9c6f8d1767b6b0e87959ab7d516f3dee3f7754e12a89aba344ae78c583064ecd"
+    },
+    {
+      "path": "src/qq/kernel/runtime.mjs",
+      "sha256": "583cafea28a7c66bc59800ce73213de4b80de0ea6cfd2872594da58269961f9f"
+    },
+    {
+      "path": "src/qq/kernel/send.mjs",
+      "sha256": "3ac4021c67410e79ea6211fee28b257153bfe27d5b5916b0ffc4ae5f542962d3"
+    },
+    {
+      "path": "src/qq/kernel/session-ready.mjs",
+      "sha256": "d33f8b6d8c8fe423965352c85fab05bbf0e2504f851648921eb929d353c7a569"
+    },
+    {
+      "path": "src/qq/message-ids.mjs",
+      "sha256": "f88c92477922c35f364c38e6b594431f8b123344e74ccad622c0d752f3757b20"
+    },
+    {
+      "path": "src/qq/native-driver.mjs",
+      "sha256": "c46dd0ca3fa82b94113748b18b66fc9eb71cc1bc845472ff1580dece21edd68e"
+    },
+    {
+      "path": "src/qq/native/binary.mjs",
+      "sha256": "11cbca43354bfd09405cb04ee32139f9172705aa127576a3b46c595322462144"
+    },
+    {
+      "path": "src/qq/native/contacts.mjs",
+      "sha256": "acdb24ad8f428bc6b2ac0791c2d66a21fb026ca6ccb7790c8c2e4ae60d40806b"
+    },
+    {
+      "path": "src/qq/native/login.mjs",
+      "sha256": "2c6e2e61458f5907788c6ae796a6ad71b90e946af8d457873b853da765dfff79"
+    },
+    {
+      "path": "src/qq/native/messages.mjs",
+      "sha256": "af3a2fe72dd5f27d07576585198987eb8428c55ffc359447c032a5a9b0c80885"
+    },
+    {
+      "path": "src/qq/native/profile.mjs",
+      "sha256": "64fe1ec524182f300bd2db327328e17cfa1150b2dc375f8e549f50eaee6732f3"
+    },
+    {
+      "path": "src/qq/native/protobuf.mjs",
+      "sha256": "87f6e94a9f11882f8f7741023c447fb8eead6e4b373192556c633122d75ac38b"
+    },
+    {
+      "path": "src/qq/native/tea.mjs",
+      "sha256": "b22e5bae136336b3d453fabd7775cc43b4e8127b07c549e8f59a80f960313e07"
+    },
+    {
+      "path": "src/qq/native/transport.mjs",
+      "sha256": "a0a96ce3b73d66b7fdd1d06bc7d9f6db464eec14447cf15fcea63c0aa077664d"
+    },
+    {
+      "path": "src/qq/session-vault.mjs",
+      "sha256": "faebc58a8fcff27345e2c7f6f631af4cd23846cbb33344eff5291d573e90ec84"
+    },
+    {
+      "path": "src/settings.mjs",
+      "sha256": "9b369006022f6250da53323a998049fe95f074774d46dce8d339494d156dba48"
+    },
+    {
+      "path": "src/store.mjs",
+      "sha256": "fed1a63ad4cf7f7b8e8cbed93f3b8609c9f40307849f758a657f072543580791"
+    },
+    {
+      "path": "src/telemetry.mjs",
+      "sha256": "fa05704ae7c4a25bf343225fd0726be26aaab35fa707893e9ede1a3c90115692"
+    },
+    {
+      "path": "src/web/client.mjs",
+      "sha256": "5d7e901f81a7ab12dddad39b7eaa6c738f1851365ac4b17a35ed43da1c678e45"
+    },
+    {
+      "path": "src/web/job-detail.mjs",
+      "sha256": "04f8e52ddb3a3047fc9798806721ab5bc18640b5e0a48752d016741e42c087f8"
+    },
+    {
+      "path": "src/web/login-server.mjs",
+      "sha256": "1192256a5156fef2319b64c8d8de31a00525eebf27eddc3f29c5dfe3e4610ebc"
+    },
+    {
+      "path": "src/web/page.mjs",
+      "sha256": "3191c39d937c5aad79eb17adc71c88dc9b7722d984d754d9f93636eae27939d6"
+    },
+    {
+      "path": "src/web/styles.mjs",
+      "sha256": "91ec2014a6bffc8c288d7579d0bcbc6fe146eea07a4b77124f822745e96932e9"
+    },
+    {
+      "path": "src/worker.mjs",
+      "sha256": "dd83e2cca4397a06ebd809ed95493f4b0f643acd26104556a78c5382b329279c"
+    },
+    {
+      "path": "start.cmd",
+      "sha256": "1c0dc62d604f4f1beda954fd2cbed3c006ffccbae8a313d27457d2a6c8577928"
+    },
+    {
+      "path": "test/access-and-runner.test.mjs",
+      "sha256": "b6c1e422381b82b79356570b215e903a7bb725765cc0628e01430383aeee2793"
+    },
+    {
+      "path": "test/core.test.mjs",
+      "sha256": "c90c0ee68a4cc40b66b0fdce204ea4a7c2c91991c1dc799ed239b3415e30edec"
+    },
+    {
+      "path": "test/first-start.test.mjs",
+      "sha256": "dd3d583739d3ea7e6e02555cef6b50a0a1dbadb95d93d7359a2980ad60de160f"
+    },
+    {
+      "path": "test/helpers.mjs",
+      "sha256": "3c882f3ce6f485cf72a0a8a0c490eaa9ea22362a3a30269897ee562980752deb"
+    },
+    {
+      "path": "test/image-fixture.mjs",
+      "sha256": "ac6701e23a244a53d7dd82f9e51b36f3b713e31535a470fcc40a142868d8f693"
+    },
+    {
+      "path": "test/image.test.mjs",
+      "sha256": "3c003a943dd516c6ee2d5bb8515a2de47409134613321603483ab2259716b851"
+    },
+    {
+      "path": "test/integration.test.mjs",
+      "sha256": "7cb11e2008420cd17fe960be4151ea8e067fdbbb309969db6359ffcf38d6a2d6"
+    },
+    {
+      "path": "test/job-lifecycle-privacy.test.mjs",
+      "sha256": "42c0744e585b97e196654f1d24f75f74435a6f6229ea56574982b729f5be575b"
+    },
+    {
+      "path": "test/kernel-host-harness.mjs",
+      "sha256": "5c0e80aa0281815d5e46ccf72d390b01f379a8ed440043730795faccd978ef51"
+    },
+    {
+      "path": "test/kernel.test.mjs",
+      "sha256": "deb640b78ce3354cd6ce0df4142b60f7d605c15019a428682e724d454ff0ee7d"
+    },
+    {
+      "path": "test/launcher-web.test.mjs",
+      "sha256": "2c0d64cadab5df21cee994c4702e38d0ee11405c181febc3d4d96fff3b8f6bd9"
+    },
+    {
+      "path": "test/lock-owner-fixture.mjs",
+      "sha256": "879c1c19cfcfc24c7b4087d8f09154d50d7d202b58fa7bb498d5cb0314fec089"
+    },
+    {
+      "path": "test/native.test.mjs",
+      "sha256": "2750af15f603a2b5ae0a842102351d8b644eaf5c496a5e8c3aa4c67ed6665d92"
+    },
+    {
+      "path": "test/privacy-ui.test.mjs",
+      "sha256": "8141bd8d6d26745b314d20c1b8163ed408ba839741bedacc6aead0515fb1b1b6"
+    },
+    {
+      "path": "test/receive-images.test.mjs",
+      "sha256": "c3856f4148e45f660f746438faf28f8d8f5e81a9ae97349bd46cbe15ca15aa02"
+    },
+    {
+      "path": "test/review-fixes.test.mjs",
+      "sha256": "88011868e82f6fa0bf3bda1b5e5d013e48e89a357e635043994a902ea20c44fe"
+    },
+    {
+      "path": "test/robustness.test.mjs",
+      "sha256": "6aafecba1a839de3c3ad5915bf26fb5eb83d496c69a1f8a9ccc2c64826c1cb40"
+    },
+    {
+      "path": "test/web-management.test.mjs",
+      "sha256": "a6e8bc696410ac2f514bdcaebff3f6463d754fff29c369e92b417a658371c0af"
+    },
+    {
+      "path": "test/worker-scheduling.test.mjs",
+      "sha256": "6520db8493e0d85bfb5d8176c0fd03fc275120b6689dca6593f1e16e9e3b51ad"
+    },
+    {
+      "path": "test/worker-shutdown.test.mjs",
+      "sha256": "012bd1623ae3338b3c2bbc7ada4a9eb2a22753e4e0c3c8d694f61f32a30f58ba"
+    }
+  ]
+}

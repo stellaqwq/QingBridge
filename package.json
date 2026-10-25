@@ -1,0 +1,28 @@
+{
+  "name": "qq-ai-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-developed official QQNT kernel host, OneBot v11 server and durable AI reply pipeline",
+  "engines": { "node": ">=24.0.0" },
+  "files": ["src/**/*.mjs", "scripts/**/*.mjs", "docs/**/*.md", "native/**/*.c", "examples/**/*.mjs", "test/**/*.mjs", ".env.example", "Dockerfile", "compose.yaml", "start.cmd"],
+  "scripts": {
+    "init": "node scripts/init.mjs",
+    "start": "node --env-file-if-exists=.env src/main.mjs",
+    "launch": "node scripts/launch.mjs",
+    "demo": "node scripts/demo.mjs",
+    "cli": "node --env-file-if-exists=.env scripts/cli.mjs",
+    "native:check": "node --env-file-if-exists=.env scripts/native-check.mjs",
+    "qq:setup": "node --env-file-if-exists=.env scripts/qq-setup.mjs",
+    "qq:build": "node --env-file-if-exists=.env scripts/qq-build.mjs",
+    "qq:prepare": "node scripts/qq-prepare.mjs",
+    "qq:download": "node --env-file-if-exists=.env scripts/qq-download.mjs",
+    "login": "node --env-file-if-exists=.env scripts/login-page.mjs",
+    "source:export": "node scripts/source-package.mjs",
+    "web:qa": "node scripts/web-qa.mjs",
+    "image:selftest": "node scripts/image-self-test.mjs",
+    "test": "node scripts/test.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": { "ws": "8.18.3" }
+}
