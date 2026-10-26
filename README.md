@@ -1,4 +1,4 @@
-# QingBridge
+# QQ AI Bot
 
 基于官方 QQNT 内核的本地 QQ 机器人，提供 OneBot v11 兼容接口、扫码登录工作台和可选的 AI 自动回复。项目通过自研 N-API 宿主加载官方内核，不依赖 NapCat 或其他 QQ 机器人框架。
 
@@ -16,12 +16,14 @@
 | 好友列表、群列表、QQ 号到 UID 的主动解析 | 已接入 SDK 并有模拟回归，待补充实机验收 |
 | 本地登录恢复、断线重连、宿主恢复 | 已实现并有模拟回归，待长期实机验证 |
 | AI 回复 | 支持兼容 Chat Completions 的模型服务、会话白名单和持久化任务队列 |
+| QQ 空间 / AI 说说 | 支持 AI 通过 HTTP 直接发布正文或生成后自动发布，也支持网页草稿、可见范围、加密 Cookie、请求防重及未知结果核对；待真实账号验收，见 [QQ 空间使用说明](docs/QZONE.md) |
 | Web 管理台 | 全量分组配置、密钥管理、扫码与退出、保存后重启、消息监听、日志检索和任务核对 |
 | OneBot 接入 | HTTP、正向 / 反向 WebSocket、webhook；具体动作受驱动能力限制 |
 | 图片与表情包收发 | 发送支持 PNG / JPEG / GIF / WebP、Base64 / 本地路径 / HTTP(S) 和图文混排；接收先下载再推送可访问链接，支持 get_image；验收状态见 docs/IMAGES.md |
-| 语音、文件、撤回、群管理 | 默认内核驱动尚不支持 |
+| GPT-SoVITS / 语音发送 | 支持 WAV / SILK、record 消息段、私聊与群聊、文件 / Base64 / HTTP 输入；已完成编解码及模拟回归，待真实账号验收，见 [语音说明](docs/VOICE.md) |
+| 文件、撤回、群管理 | 默认内核驱动尚不支持 |
 
-文本收发实机验证使用 **QQ 9.9.36-53644，日期为 2026-10-24**；2026-10-25 在运行的 **QQ 9.9.27-45758** 上完成向机器人自身发送 Base64 PNG 的实机验证。版本、发送确认与接收记录见 [官方内核适配与实机验证](docs/KERNEL.md)和[图片与 AstrBot](docs/IMAGES.md)。这些记录不代表其他图片格式或后续 QQ 版本已完成实机验证。
+文本收发实机验证使用 **QQ 9.9.36-53644，日期为 2026-10-24**；2026-10-25 在用户运行的 **QQ 9.9.27-45758** 上完成向机器人自身发送 Base64 PNG 的实机验证。版本、发送确认与接收记录见 [官方内核适配与实机验证](docs/KERNEL.md)和[图片与 AstrBot](docs/IMAGES.md)。这些记录不代表其他图片格式或后续 QQ 版本已完成实机验证。
 
 ## 快速开始
 
@@ -136,6 +138,8 @@ AI 默认关闭。启用时必须填写模型标识，并至少配置一个允�
 ### AstrBot 与表情包
 
 在 AstrBot 创建 OneBot v11 机器人，本项目“全部设置 → OneBot 与推送”填写对应反向 WS 地址（同机通常为 `ws://127.0.0.1:6199/ws`）及相同 Token，保存后重启。由 AstrBot 负责回复时关闭本项目内置 AI。
+
+使用 AstrBot 的 QQ 空间插件 `llm_publish_feed` 时，先在本项目保存空间 Cookie，再开启“全部设置 → OneBot 与推送 → 允许 AstrBot 获取空间 Cookie”，保存并重启。该插件发布前会调用 `get_cookies`；详情与权限范围见 [QQ 空间说明](docs/QZONE.md)。
 
 图片发送支持 `image` 消息段、Base64、本机绝对路径、`file://` 和 HTTP(S) URL；GIF 保留原始字节。AstrBot 与 QQ 机器人不共享文件系统时，表情插件应启用 Base64 图片发送。图片读取、SDK 上传和终态确认完成后才返回成功，结果未知时不会自动重发。详情及限制见 [图片与 AstrBot 接入](docs/IMAGES.md)。
 
@@ -352,6 +356,12 @@ npm run qq:build
 npm run check
 npm test
 
+# 检查当前 QQ 运行时、宿主和 Node 的完整性与接口兼容性
+npm run qq:check
+
+# 使用全新临时数据验证真实内核加载、二维码获取和正常退出
+npm run qq:check -- --qr --report dist/qq-runtime-check.json
+
 # 只运行调度与停机回归文件
 npm test -- test/worker-scheduling.test.mjs test/worker-shutdown.test.mjs
 
@@ -359,7 +369,9 @@ npm test -- test/worker-scheduling.test.mjs test/worker-shutdown.test.mjs
 npm run source:export
 ```
 
-最近一次完整回归为 **105 项全部通过**。测试包含模拟驱动、合成协议端和宿主状态机，覆盖认证隔离、消息确认、AI 队列、重试、停机、数据库迁移与数据保留；它们不替代实机验证。
+2026-10-26 更新运行库后，最近一次完整回归为 **231 项全部通过**。测试包含模拟驱动、合成协议端和宿主状态机，覆盖认证隔离、消息确认、AI 队列、重试、停机、数据库迁移与数据保留；它们不替代实机验证。
+
+本次将 `ws` 从 8.18.3 更新到 8.22.0，`silk-wasm` 保持已发布最新版 3.7.1；QQ 官方运行时从 9.9.27-45758 更新为 9.9.36-53644。`qq:check -- --qr` 已验证新版真实内核和二维码链路；该命令不会恢复现有账号，会在检查后清理临时数据，不打印或保存二维码。本轮未重新进行扫码认证和真实消息收发，完整范围与回退方式见 [运行库升级与兼容性记录](docs/RUNTIME-UPDATE-2026-10-26.md)。
 
 `npm test` 将严格结果写入 `dist/test-results.json`。只有所有选中测试完成且全部通过，失败、取消、跳过及待办数均为 0，才返回成功。每次运行会先将旧报告标记为未完成；CI 应同时检查退出码和报告的 `success/complete`。
 
